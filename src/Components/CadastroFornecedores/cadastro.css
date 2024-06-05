@@ -1,0 +1,170 @@
+.contai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160vh;
+  background-color: #000000;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.form-contai {
+  width: 1000px;
+  margin: auto;
+  background-color: #d2d2d2;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-contai:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.form-header-cadastro {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #333;
+  font-size: 24px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.two-colum-form-cadastro {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+
+.column-cadastro {
+  width: 48%;
+}
+
+.form-input-cad {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-input-cad:focus {
+  outline: none;
+  border-color: #ff3a12;
+  box-shadow: 0 0 5px rgba(255, 58, 18, 0.5);
+}
+
+.localidade,
+.pessoa {
+  width: 100%;
+}
+
+.bank-details {
+  margin-top: 20px;
+}
+
+.bank-details .form-input-cad {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.form-button-cad {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #ff3a12;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.form-button-cad:hover {
+  background-color: #e02e10;
+  transform: scale(1.05);
+}
+
+.button-cad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 0.05em;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.input-with-icon-cad {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.input-with-icon-cad .form-input-cad {
+  flex: 1;
+  margin-left: 0.5em;
+}
+
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-icon-cad {
+  margin-right: 0.5em;
+  margin-bottom: 20px;
+  color: #ff3a12;
+  transition: transform 0.3s ease-in-out;
+}
+
+.input-icon-cad:hover {
+  transform: rotate(20deg);
+}
+
+@media screen and (max-width: 768px) {
+  .contai {
+    height: 200vh;
+  }
+  .form-contai {
+    width: 80%;
+  }
+  .two-colum-form-cadastro {
+    flex-direction: column;
+    align-items: center;
+  }
+  .column-cadastro {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .bank-details {
+    margin-left: 0;
+  }
+  .form-input-cad {
+    font-size: 14px;
+  }
+  .button-cad {
+    width: 80%;
+  }
+}
