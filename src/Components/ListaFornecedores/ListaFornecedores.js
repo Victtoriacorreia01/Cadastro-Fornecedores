@@ -17,14 +17,14 @@ function ListaFornecedores({ fornecedores, onDeleteFornecedor }) {
               <p><strong>Telefone:</strong> {fornecedor.telefone}</p>
               <p><strong>Localidade:</strong> {fornecedor.localidade}</p>
               <p><strong>Cnpj:</strong> {fornecedor.cnpj}</p>
-              <p><strong>Contato:</strong> {fornecedor.contato}</p>
+              <p><strong>Codigo:</strong> {fornecedor.codigo}</p>
               <p><strong>Site:</strong> {fornecedor.site}</p>
               <p><strong>Cep:</strong> {fornecedor.cep}</p>
               <p><strong>Bairro:</strong> {fornecedor.bairro}</p>
               <p><strong>Numero:</strong> {fornecedor.numero}</p>
               <p><strong>Complemento:</strong> {fornecedor.complemento}</p>
               <p><strong>Tipo de Atividade:</strong> {fornecedor.tipoAtividade}</p>
-              <p><strong>Banco:</strong> {fornecedor.banco}</p>
+              <p><strong>Banco:</strong> {fornecedor.nomeBanco}</p>
               <p><strong>Agencia:</strong> {fornecedor.agencia}</p>
               <p><strong>Conta:</strong> {fornecedor.conta}</p>
               <p><strong>CPF:</strong> {fornecedor.cpf}</p>

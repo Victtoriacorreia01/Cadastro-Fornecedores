@@ -11,12 +11,15 @@ const CadastroFornecedores = ({ onAddFornecedor }) => {
   const validationSchema = Yup.object({
     nome: Yup.string().required('Nome é obrigatório'),
     email: Yup.string().email('Email inválido').required('Email é obrigatório'),
-    telefone: Yup.string().required('Telefone é obrigatório'),
+    telefone: Yup.string().required('Telefone é obrigatório').test('telefone-validation', 'Telefone inválido', (value) => {
+      const telefoneRegex = /^\(?\d{2}\)?[\s-]?[\s9]?\d{4}-?\d{4}$/;
+      return telefoneRegex.test(value);
+    }),
     cnpj: Yup.string().required('CNPJ é obrigatório').test('cnpj-validation', 'CNPJ inválido', (value) => {
       const cnpjRegex = /^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$/;
       return cnpjRegex.test(value);
     }),
-    contato: Yup.string().required('Contato é obrigatório'),
+    codigo: Yup.string().required('O codigo é obrigatório'),
     localidade: Yup.string().required('Localidade é obrigatória'),
     site: Yup.string().url('URL inválida').required('Site é obrigatório'),
     cep: Yup.string().required('CEP é obrigatório'),
@@ -33,6 +36,7 @@ const CadastroFornecedores = ({ onAddFornecedor }) => {
     }),
     tipoPessoa: Yup.string().required('Tipo de Pessoa é obrigatório'),
   });
+  
 
   const handleSubmit = (values) => {
     onAddFornecedor(values);
@@ -49,7 +53,7 @@ const CadastroFornecedores = ({ onAddFornecedor }) => {
             email: '',
             telefone: '',
             cnpj: '',
-            contato: '',
+            codigo: '',
             Localidade: '', 
             site: '',
             cep: '',
@@ -123,11 +127,11 @@ const CadastroFornecedores = ({ onAddFornecedor }) => {
                     <div className="form-input-container">
                       <Field
                         type="text"
-                        name="contato"
-                        placeholder="Contato"
+                        name="codigo"
+                        placeholder="Codigo"
                         className="form-input-cad"
                       />
-                      <ErrorMessage name="contato" component="div" className="error-message" />
+                      <ErrorMessage name="codigo" component="div" className="error-message" />
                     </div>
                   </div>
                   <div className="input-with-icon-cad">
