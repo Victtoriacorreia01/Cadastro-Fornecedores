@@ -1,7 +1,7 @@
 .lista-fornecedores-container {
   max-width: 1400px;
   margin-top: 70px;
- margin-left: 50px;
+  margin-left: 50px;
   padding: 20px;
   background-color: white;
   border-radius: 15px;
@@ -79,16 +79,20 @@
   .lista-fornecedores-container {
     width: 80%;
     padding: 10px;
-    margin-right: 10px;
+    margin: 0 auto; 
+    margin-top: 50px;
   }
+
   .fornecedor {
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 20px ;
+    padding: 10px; 
     background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(41, 40, 40, 0.1);
     transition: transform 0.3s ease;
-    width: 340px;
+    width: 90%; 
+    margin-bottom: 10px; 
+    margin-left: 8px;
   }
 
   .fornecedores-grid {
@@ -96,12 +100,13 @@
   }
 
   .fornecedor-buttons {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
   .editar-link, .excluir-button {
-    width: 40%;
+    width: 30%; 
     text-align: center;
     margin-top: 5px;
   }
