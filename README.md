@@ -1,31 +1,31 @@
-Sistema de Cadastro de Fornecedores
+## Sistema de Cadastro de Fornecedores
 Este é um projeto em React.js para um sistema de cadastro de fornecedores. O sistema permite cadastrar, listar, editar e excluir fornecedores.
 
 
-O sistema de cadastro de fornecedores é uma aplicação web que permite aos usuários:
+### O sistema de cadastro de fornecedores é uma aplicação web que permite aos usuários:
 
 Cadastrar novos fornecedores
 Listar fornecedores cadastrados
 Editar informações de fornecedores existentes
 Excluir fornecedores
 
-Tecnologias Utilizadas
+### Tecnologias Utilizadas
 React.js
 Formik
 Yup
 React Router
 CSS
 
-CadastroFornecedores
+# CadastroFornecedores
 Componente responsável pelo formulário de cadastro de fornecedores. Utiliza Formik e Yup para gerenciamento de formulário e validação.
 
-EditarFornecedor
+# EditarFornecedor
 Componente responsável por editar os dados de um fornecedor existente.
 
-ListaFornecedores
+# ListaFornecedores
 Componente que exibe a lista de fornecedores cadastrados, com opções para editar e excluir cada fornecedor.
 
-Navbar
+# Navbar
 Componente de navegação que permite acessar as páginas de cadastro e lista de fornecedores.
 
 App
